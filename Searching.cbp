@@ -63,9 +63,6 @@
 		<Linker>
 			<Add directory="vendor/tabulate-master/single_include/tabulate" />
 		</Linker>
-		<Unit filename="boost-main.cpp">
-			<Option target="Graphs" />
-		</Unit>
 		<Unit filename="main-test.cpp">
 			<Option target="Test" />
 		</Unit>
@@ -159,11 +156,7 @@
 		<Unit filename="vendor/catch/catch.hpp">
 			<Option target="Test" />
 		</Unit>
-		<Unit filename="vendor/magic_enum/magic_enum.hpp">
-			<Option target="Debug" />
-			<Option target="Release" />
-			<Option target="Test" />
-		</Unit>
+		<Unit filename="vendor/sciplot/sciplot.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
