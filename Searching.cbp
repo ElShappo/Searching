@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Searching" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Searching" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#boost.include)" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#boost.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Searching" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Test">
+				<Option output="Searching" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Graphs">
+				<Option output="Searching" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="vendor/catch" />
+			<Add directory="src/Auxiliary" />
+			<Add directory="src/Datatypes/Dictionary" />
+			<Add directory="src/Datatypes/Sequence" />
+			<Add directory="src/Datatypes/Set" />
+			<Add directory="src/Datatypes/SortedSequence" />
+			<Add directory="src/Generators" />
+			<Add directory="src/Tasks/AlphabetPtr" />
+			<Add directory="src/Tasks/Histogram" />
+			<Add directory="src/Tasks/SparseVector" />
+			<Add directory="vendor/magic_enum" />
+			<Add directory="src/Tasks/AlphabetPtr/samples" />
+			<Add directory="src/Tasks/AlphabetPtr/outputs" />
+			<Add directory="vendor/tabulate-master/single_include/tabulate" />
+		</Compiler>
+		<Linker>
+			<Add directory="vendor/tabulate-master/single_include/tabulate" />
+		</Linker>
+		<Unit filename="boost-main.cpp">
+			<Option target="Graphs" />
+		</Unit>
+		<Unit filename="main-test.cpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/Auxiliary/epsilon.cpp" />
+		<Unit filename="src/Auxiliary/epsilon.h" />
+		<Unit filename="src/Datatypes/Dictionary/Dictionary.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Datatypes/Dictionary/DictionaryException.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Datatypes/Sequence/Sequence.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Datatypes/Sequence/SequenceException.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Datatypes/Set/MySet.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Datatypes/Set/MySetException.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/DictionaryGenerator.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/Generator.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/GeneratorException.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/MySetGenerator.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/PersonGenerator.hpp" />
+		<Unit filename="src/Generators/SequenceGenerator.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/SortedSequenceGenerator.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Generators/SparseVectorGenerator.hpp" />
+		<Unit filename="src/Tasks/AlphabetPtr/AlphabetPtr.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Tasks/AlphabetPtr/AlphabetPtrException.hpp" />
+		<Unit filename="src/Tasks/Histogram/Histogram.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="src/Tasks/Histogram/HistogramException.hpp" />
+		<Unit filename="src/Tasks/Histogram/Person.hpp" />
+		<Unit filename="src/Tasks/Histogram/PersonException.hpp" />
+		<Unit filename="src/Tasks/SparseVector/SparseVector.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="vendor/catch/catch.hpp">
+			<Option target="Test" />
+		</Unit>
+		<Unit filename="vendor/magic_enum/magic_enum.hpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Test" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

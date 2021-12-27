@@ -1,0 +1,15 @@
+/obj
+/bin
+/samples
+/outputs
+/.objs
+/rttr-master
+*.o
+*.depend
+*.layout
+*.txt
+*.exe
+*.dat
+*.plt
+*.pdf
+
